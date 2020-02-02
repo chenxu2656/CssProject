@@ -7,11 +7,25 @@
 ## 项目列表
 ---
 ### 1.实现css层叠效果
-- 1. 想法及项目来源
+1. 想法及项目来源
+
 https://www.bilibili.com/video/av85779437
-- 2. 文件名
+
+2. 文件名
+
 001.html
-- 3. 项目效果
-<div style="width: 100%; display: flex; justify-content: center;">
-    <img src="http://image.qianduan.ltd/001.gif" style="display: block; width: 70%; border: 2px solid blue;">
-</div>
+
+3. 项目效果
+![演示效果](http://image.qianduan.ltd/001.gif)
+
+### 2.实现大黄脸眼睛跟随鼠标转动
+1. 想法及项目来源
+
+https://www.bilibili.com/video/av85885408
+
+2. 文件名
+
+002.html
+
+3. 项目效果
+![演示效果](http://image.qianduan.ltd/002.gif)
