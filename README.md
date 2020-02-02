@@ -12,5 +12,4 @@ https://www.bilibili.com/video/av85779437
 - 2. 文件名
 001.html
 - 3. 项目效果
-<video src="http://files.qianduan.ltd/001.mp4" width='100%'></video>
-<iframe  width=100% src="http://files.qianduan.ltd/001.mp4">
+![效果](http://image.qianduan.ltd/001.gif)
