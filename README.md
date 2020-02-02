@@ -11,21 +11,20 @@
 
 https://www.bilibili.com/video/av85779437
 
-2. 文件名
+2. 文件
 
-001.html
+> https://github.com/chenxu2656/css-project/blob/master/001.html
 
 3. 项目效果
 ![演示效果](http://image.qianduan.ltd/001.gif)
 
 ### 2.实现大黄脸眼睛跟随鼠标转动
 1. 想法及项目来源
+> https://www.bilibili.com/video/av85885408
 
-https://www.bilibili.com/video/av85885408
+2. 文件
 
-2. 文件名
-
-002.html
+> https://github.com/chenxu2656/css-project/blob/master/002.html
 
 3. 项目效果
 ![演示效果](http://image.qianduan.ltd/002.gif)
