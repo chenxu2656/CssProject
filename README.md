@@ -12,4 +12,6 @@ https://www.bilibili.com/video/av85779437
 - 2. 文件名
 001.html
 - 3. 项目效果
-![效果](http://image.qianduan.ltd/001.gif)
+<div style="width: 100%; display: flex; justify-content: center;">
+    <img src="http://image.qianduan.ltd/001.gif" style="display: block; width: 70%; border: 2px solid blue;">
+</div>
