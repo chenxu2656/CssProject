@@ -1,0 +1,120 @@
+<!-- 
+project：大黄脸，眼睛跟随鼠标位置特效
+author：许许如生
+date：2020-2-1
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<hea
+d>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    body{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    #con{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: yellow;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .eyes{
+        margin-top: 10px;
+        width: 48%;
+        height: 49%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .eyesCon{
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        transition: 0.1s;
+    }
+    /* body:hover .eyesCon{
+        transform: rotate(45deg);
+    } */
+    .yanzhu{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    .mouth{
+        margin-top: -20px;
+        width: 80px;
+        height: 40px;
+        background-color: chocolate;
+        border-radius:0 0 120px 120px ;
+    }
+    
+</style>
+<body>
+    <div id="con">
+        <div class="eyes">
+            <div class="eyesCon">
+                <div class="yanzhu">
+
+                </div>
+            </div>
+        </div>
+        <div class="eyes">
+            <div class="eyesCon">
+                <div class="yanzhu">
+
+                </div>
+            </div>
+        </div>
+        <div class="mouth">
+        </div>
+    </div>
+</body>
+<script>
+document.body.addEventListener('mousemove',function(){
+    var xCenter = document.documentElement.clientWidth/2;
+    var yCenter = document.documentElement.clientHeight/2;
+    var e = event || window.event;
+    var x1= e.clientX-xCenter;
+    var y1= e.clientY-yCenter;
+    var tang = 360*Math.atan(y1/x1)/(2*Math.PI);
+        var getEyes = document.getElementsByClassName('eyesCon');
+    if(e.clientX<xCenter){     
+        tang = tang+'deg';
+            for(let i = 0 ;i<2 ;i++){
+            getEyes[i].style.transform = "rotate("+tang+")";
+        }
+    }else{
+        tang+=180;
+        console.log(tang);
+        tang+='deg';
+        for(let i = 0 ;i<2 ;i++){
+            getEyes[i].style.transform = "rotate("+tang+")";
+        }
+    }
+})
+</script>
+</html>

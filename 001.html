@@ -1,0 +1,60 @@
+<!-- 
+project：css层次效果
+author：许许如生
+date：2020-2-1
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+#con{
+    width: 240px;
+    height: 400px;
+    position: relative;
+    transform: rotate(-25deg) skew(30deg);
+}
+img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s;
+}
+#con:hover img:nth-child(5){
+    transform: translateY(-80px) translateX(80px);
+    opacity: 0.9;
+}
+#con:hover img:nth-child(4){
+    transform: translateY(-60px) translateX(60px);
+    opacity: 0.8;
+}
+#con:hover img:nth-child(3){
+    transform: translateY(-40px) translateX(40px);
+    opacity: 0.7;
+}
+#con:hover img:nth-child(2){
+    transform: translateY(-20px) translateX(20px);
+    opacity: 0.6;
+}
+</style>
+<body>
+    <div id="con">
+         <img src="http://image.qianduan.ltd/app.jpg" alt=""> 
+         <img src="http://image.qianduan.ltd/app.jpg" alt=""> 
+         <img src="http://image.qianduan.ltd/app.jpg" alt=""> 
+         <img src="http://image.qianduan.ltd/app.jpg" alt=""> 
+         <img src="http://image.qianduan.ltd/app.jpg" alt=""> 
+    </div>
+</body>
+</html>
