@@ -1,0 +1,40 @@
+@mixin  defaultBorder($radius,$width) {
+    border-radius: $radius;
+    border: $width solid black;
+}
+@mixin  flexLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #CCDBDC;
+    @include flexLayout();
+}
+#btn{
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 70px;
+    @include defaultBorder(35px,0px);
+    background-image: linear-gradient(90deg,#c21500,#ffc500,#DE6262,#c21500);
+    background-size: 400%;
+    &:hover{
+        animation: startDisplay 4s infinite linear;
+    }
+    box-shadow: 10px 10px blur ;
+    color: white;
+    // font-size:;
+}
+@keyframes startDisplay{
+   from{
+       background-position: 0%;
+   } to{
+    background-position: 400%;
+}}

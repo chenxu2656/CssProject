@@ -1,0 +1,40 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #CCDBDC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn {
+  outline: none;
+  border: none;
+  width: 200px;
+  height: 70px;
+  border-radius: 35px;
+  border: 0px solid black;
+  background-image: linear-gradient(90deg, #c21500, #ffc500, #DE6262, #c21500);
+  background-size: 400%;
+  box-shadow: 10px 10px blur;
+  color: white;
+}
+#btn:hover {
+  animation: startDisplay 4s infinite linear;
+}
+
+@keyframes startDisplay {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 400%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
