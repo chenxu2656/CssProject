@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@mixin size($width,$height){
+    width: $width;
+    height: $height;
+}
+$color:#15AF83,#FFDB15,#FF5C3F,#00A3C0,#EA507C,#7AE7C7;
+@mixin  flexLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    @include flexLayout();
+}
+#container{
+    width: 300px;
+    height: 300px;
+    transform-style:preserve-3d;
+    transform:rotateX(-45deg) rotateY(45deg);
+    @for $i from 1 to 7{
+        .img-#{$i}{
+            @include size(300px,300px);
+            background-color:nth($color, $i );
+            opacity: 0.5;
+            position: absolute;
+            font-size: 100px;
+            text-align: center;
+            line-height: 300px;
+            color: white;
+            @if #{$i}/2==0 && #{$i}/6!=0 {
+                transform:rotateY(-90deg)translateZ(150px);
+            }@else if #{$i}==1{
+                transform:translateZ(150px);
+            }@else if #{$i}==6{
+                transform:translateZ(-150px); 
+            }@else{
+                transform:rotateX(90deg)translateZ(150px);
+            }       
+        }
+    }
+    &:hover{
+        animation: startPlay 4s infinite linear;
+    }
+}
+@keyframes startPlay {
+    from{
+        transform:rotateY(45deg) rotateX(-45deg)
+    }to{
+        transform:rotateY(405deg) rotateX(-405deg);
+    }
+}
