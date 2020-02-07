@@ -1,0 +1,87 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#con {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  width: 600px;
+  height: 300px;
+}
+#con .color-1 {
+  height: 280px;
+  width: 560px;
+  border-top-left-radius: 280px;
+  border-top-right-radius: 280px;
+  background-color: #FF0000;
+  position: absolute;
+}
+#con .color-2 {
+  height: 260px;
+  width: 520px;
+  border-top-left-radius: 260px;
+  border-top-right-radius: 260px;
+  background-color: #FF7F00;
+  position: absolute;
+}
+#con .color-3 {
+  height: 240px;
+  width: 480px;
+  border-top-left-radius: 240px;
+  border-top-right-radius: 240px;
+  background-color: #FFFF00;
+  position: absolute;
+}
+#con .color-4 {
+  height: 220px;
+  width: 440px;
+  border-top-left-radius: 220px;
+  border-top-right-radius: 220px;
+  background-color: #00FF00;
+  position: absolute;
+}
+#con .color-5 {
+  height: 200px;
+  width: 400px;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  background-color: #00FFFF;
+  position: absolute;
+}
+#con .color-6 {
+  height: 180px;
+  width: 360px;
+  border-top-left-radius: 180px;
+  border-top-right-radius: 180px;
+  background-color: #0000FF;
+  position: absolute;
+}
+#con .color-7 {
+  height: 160px;
+  width: 320px;
+  border-top-left-radius: 160px;
+  border-top-right-radius: 160px;
+  background-color: #8B00FF;
+  position: absolute;
+}
+#con .color-8 {
+  height: 140px;
+  width: 280px;
+  border-top-left-radius: 140px;
+  border-top-right-radius: 140px;
+  background-color: #FFFFFF;
+  position: absolute;
+}
+
+/*# sourceMappingURL=style.css.map */

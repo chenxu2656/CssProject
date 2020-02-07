@@ -1,0 +1,33 @@
+@mixin flexLayout($justify,$align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+$color:#FF0000 ,#FF7F00,#FFFF00 ,#00FF00 ,#00FFFF ,#0000FF,#8B00FF,#FFFFFF;
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    @include flexLayout(center,center);
+}
+#con{
+    @include flexLayout(center,flex-end);
+    position: relative;
+    width: 600px;
+    height: 300px;
+    @for $i from 1 to 9{
+        .color-#{$i}{
+            height: #{300-$i*20}px;
+            width: #{600-$i*40}px;
+            border: {
+                top-left-radius: #{(600-$i*40)/2}px;
+                top-right-radius: #{(600-$i*40)/2}px;
+            }
+            background-color: nth($color, $i );
+            position: absolute;
+        }
+    }
+}

@@ -47,7 +47,7 @@
 
 2. 文件
 
-> [003](https://github.com/chenxu2656/css-project/blob/master/004)
+> [004](https://github.com/chenxu2656/css-project/blob/master/004)
 
 3. 项目效果
 
